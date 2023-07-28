@@ -26,7 +26,7 @@
             <!-- MENU -->
             <header class="header">
                 <div class="logo col-4">
-                    <img src="img/favicon.webp" alt="zoo">
+                    <a href="index.html"><img src="img/favicon.webp" alt="zoo"></a>
                 </div>
                 <div class="menu col-8">
                     <ul>
@@ -41,15 +41,16 @@
     
     <!-- FORMULARIO DE CONTACTO -->
     <div class="formulario">
+        <p class="txtContc">Las casillas indicadas con <span class="rojo">*</span> son obligatorias</p>
         <form action="action_page.php">
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="firstname" placeholder="Your name..">
+          <label for="nombre"><span class="rojo">*</span> Nombre</label>
+          <input type="text" id="nombre" name="firstname" placeholder="Tu nombre" class="bien">
       
-          <label for="lname">Apellidos</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="lname"><span class="rojo">*</span> Apellidos</label>
+          <input type="text" id="lname" name="lastname" placeholder="Tus apellidos" class="bien">
       
-          <label for="formcontacto">Preferencia de contacto</label>
-          <select id="formcontacto" name="formcontacto">
+          <label for="formcontacto"><span class="rojo">*</span> Preferencia de contacto</label>
+          <select id="formcontacto" name="formcontacto" class="bien">
             <option value=""></option>
             <option value="telefono">Teléfono</option>
             <option value="email">Email</option>
@@ -57,7 +58,7 @@
           </select>
           <div class="teleOculto">
             <label for="telefono">Teléfono</label>
-            <input type="text" name="telefono" id="telefono" placeholder="Escribe tu teléfono.">
+            <input type="number" name="telefono" id="telefono" placeholder="Escribe tu teléfono.">
           </div>
           <div class="emailOculto">
             <label for="email">Email</label>
@@ -67,14 +68,14 @@
             <label for="correo">Dirección</label>
             <input type="text" name="correo" id="correo" placeholder="Escribe tu dirreción.">
           </div>
-          <label for="subject">Mensaje</label>
+          <label for="subject"><span class="rojo">*</span> Mensaje</label>
           <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" style="height:200px; border: 1px solid;"></textarea>
           <p class="boton">
             <button type="button" class="button-3">Enviar</button>
           </p>
         </form>
-        <p id="mnsError"></p>
+        
       </div>
-
+<p id="mnsError"></p>
 </body>
 </html>

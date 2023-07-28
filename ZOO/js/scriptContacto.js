@@ -84,8 +84,8 @@ function validarApellido(apellidos){
 }
 
 function validarContacto(telefono,email,direccion){
+     let seleccion=document.querySelector("#formcontacto");
     if (telefono.value==""||email.value==""||direccion.value==""){
-        let seleccion=document.querySelector("#formcontacto");
         seleccion.style.background="rgba(238, 98, 98, 0.527)";
         seleccion.style.border="1px solid #fff";
     } else {

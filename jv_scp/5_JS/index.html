@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5_JS</title>
+    <link rel="shortcut icon" href="../favicon/favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <h1 class="tit">5_JS</h1>
+        <ul class="men3">
+            <li><a href="../../index.html" class="active">Índice</a></li>
+            <li><a href="../../actividades/index.html">Actividades</a></li>
+            <li><a href="../../HTML/index.html">HTML</a></li>
+            <li><a href="../../+COTAS/index.html" target="_blank">+COTAS</a></li>
+            <li><a href="../index.html">JavaScript</a></li>
+        </ul>
+    </header>
+
+        <h2>Hoy es <span id="dia"></span></h2>
+
+        <br><br>
+
+        <h2>Notas de un alumno</h2>
+        <label>Escribe la nota:</label>
+        <input type="number" id="nota">
+        <br>
+        <button type="submit" onclick="calcNota()">Calcular Nota</button>
+        <p>Tu nota es un <span id="notaCalc"></span></p>
+
+
+        <h3>Colores</h3>
+        <input type="number" id="numero">
+        <input type="submit" onclick="
+        cambiarColor()" value="Cambiar color" id="color">
+        <br>
+        <div id="caja" style="width: 250px; height: 250px;"></div>
+        <div id="caja2" style="width: 250px; height: 250px;"></div>
+
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

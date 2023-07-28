@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="icon" href="media/IMG/favicon.webp" type="image/png">
+
+<style>
+    *{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    table, th, td {
+        border: double 3px orangered;
+        border-collapse: collapse;
+        padding: 10px;
+    }
+    .enlace1{
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #4B4B4B;
+    margin: 10px 0;
+    color: #4B4B4B;
+}
+    </style>
+</head>
+<body>
+    
+    <h2>TABLA SENCILLA</h2>
+
+    <!-- DEFINIR LA TABLA CON LA ETIQUETA -->
+
+    <table>
+        <caption>TABLA SENCILLA</caption>
+        <tr>
+            <th>NOMBRE</th>
+            <th>APELLIDOS</th>
+            <th>DNI</th>
+        </tr>
+        <tr>
+            <td>Sofía</td>
+            <td>Carretón</td>
+            <td>36149646-A</td>
+        </tr>
+        <tr>
+            <td>José</td>
+            <td>Muñoz</td>
+            <td>13541213-Y</td>
+        </tr>
+        <tr>
+            <td>Herminio</td>
+            <td>Sanchez</td>
+            <td>65469436-V</td>
+        </tr>
+        <tr>
+            <td>Antonia</td>
+            <td>López</td>
+            <td>21467344-N</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <h2>TABLA CON DOBLE ENCABEZADO UNO HORIZONTAL Y OTRO VERTICAL</h2>
+    <br>
+    <br>
+    <table>
+        <caption>LISTADO DE MESES Y ESTACIONES</caption>
+        <tr>
+            <th></th>
+            <th>PRIMAVERA</th>
+            <th>VERANO</th>
+            <th>OTOÑO</th>
+            <th>INVIERNO</th>
+        </tr>
+        <tr>
+            <th>PRIMERO</th>
+            <td>32</td>
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <th>SEGUNDO</th>
+            <td>122</td>
+            <td>131</td>
+            <td>1214</td>
+            <td>215</td>
+        </tr>
+        <tr>
+            <th>TERCERO</th>
+            <td>13</td>
+            <td>1354</td>
+            <td>1354</td>
+            <td>13145</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <h2>TABLA CON CELDAS MEZCLADAS</h2>
+    <br>
+    <br>
+    <table>
+        <captiom>TABLA CON ROWSPAN</captiom>
+        <tr>
+            <th>ENERO</th>
+            <th>FEBRERO</th>
+            <th>MARZO</th>
+        </tr>
+        <tr>
+            <td>231</td>
+            <td>1250</td>
+            <td>415</td>
+        </tr>
+        <tr>
+            <td>314</td>
+            <td rowspan="2">54</td>
+            <td>135</td>
+        </tr>
+        <!-- COMO COGE 2 FILAS SOLO SE PONEN 2 TD NO 3-->
+        <tr>
+            <td>2553</td>
+            <td>56</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table>
+        <cption>TABLA CON COLSPAN</cption>
+        <tr>
+            <th>ENERO</th>
+            <th>FEBRERO</th>
+            <th>MARZO</th>
+        </tr>
+        <tr>
+            <td>645</td>
+            <td>546</td>
+            <td>6465</td>
+        </tr>
+        <!-- EN LA TR QUE SE PONE EL COLSPAN SE ELIMINA TANTO TD COMO COLUMNAS JUNTEN -->
+        <tr>
+            <td>56468</td>
+            <td colspan="2">4568</td>
+        </tr>
+        <tr>
+            <td>3548</td>
+            <td>846568</td>
+            <td>648634</td>
+        </tr>
+    </table>
+    <br><br><br><br>
+
+    <a href="index.html" class="enlace1" >Volver</a>
+    </section>
+</body>
+</html>

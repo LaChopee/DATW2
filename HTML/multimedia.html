@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+    <style>
+        #video2{
+            width:557px; ;
+            height:432px ;
+        }
+        .enlace1{
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #4B4B4B;
+    margin:13px;
+    color: #4B4B4B;
+}
+    </style>
+        <link rel="icon" href="media/IMG/favicon.webp" type="image/png">
+
+</head>
+<body>
+    
+    <!-- botones para ir a cada video -->
+
+    <br>
+    <br>
+
+    <h1 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;text-align: center;">CULTURA GENERAL</h1>
+    
+    <br>
+    <br>
+
+    <hr style="border: 5px double blueviolet">
+
+    <br>
+    <h2 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-align: center; font-size: xx-large;">CHELO Y BARBARA</h2>
+    <br>
+
+    <hr style="border: 5px double blueviolet">
+
+
+    <!-- VIDEO DESCARGADO 
+    -atributos:
+        1.autoplay, para que inicie nada más abrir la página
+        2.controls, proporciona medios de control sobre el video
+        3. preload:
+            preload="auto", descarga datos para descargar lo mejor posible el video
+            metadata: especifica al navegador que es necesario descargar los metadatos del vídeo para tener la información técnica adecuada: dimensión, duración, etc
+            none: indica qie no hay que precargar el archivo de vídeo. Por lo tanto el navegador no tendrá ninguna información técnica del archivo.
+        width y height-> es preferible haverlo desde la fuente, pero la la etiqueta video la permite
+        loop: para que el video se reproduzaca en búcle
+        muted: para desactivar el sonido.
+
+        OBSERVACIÓN: los navegadores no autoreproducen el vídeo al menos que le indiques que es muted, o esta desactivado el sonido
+
+    -->
+
+    <br>
+    <br>
+
+    <div style="text-align:center;" >
+        <video src="media/VDO/TyYcYtQyHsMfSmGlMhTuNdAMOR (video-converter.com).webm" poster="media/IMG/chelo.webp" controls preload="auto" width="700"  >
+        </video>
+    </div>
+
+    <br>
+    <br>
+
+
+    <hr style="border: 5px double blueviolet">
+
+    <br>
+    <h2 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-align: center; font-size: xx-large;">NO DEJES DE SOÑAR</h2>
+    <br>
+
+    <hr style="border: 5px double blueviolet">
+
+    <br>
+
+    <!-- video con varios origenes -->
+    <div style="text-align:center;">
+        <video poster="media/IMG/pati195177o.webp" controls preload="auto" width="700" id="video2">
+            <source src="media/VDO/NdDs.mp4"/>
+            <source src="media/VDO/NdDs.webm"/>            
+        </video>
+    </div>
+
+    <br>
+
+    <hr style="border: 5px double blueviolet">
+
+    <br>
+    <h2 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-align: center; font-size: xx-large;">BELEN REINA</h2>
+    <br>
+
+    <hr style="border: 5px double blueviolet">
+
+    <br>
+    <br>
+    <!-- video directamente con url (inframe) -->
+    <video src="https://www.youtube.com/watch?v=M-tV0p0G20Q">
+    </video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/M-tV0p0G20Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br>
+
+    <hr style="border: 5px double blueviolet">
+
+    <br>
+    <h2 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-align: center; font-size: xx-large;">ALZHAIMAR</h2>
+    <br>
+    <br>
+
+    <hr style="border: 5px double blueviolet">
+
+    <br>
+ <!-- audio descargado
+        Atributos
+        src: donde se ubica el archivo
+    -->
+    <div style="text-align: center;">
+        <audio src="media/AUD/Iquerida.webm" controls>
+        </audio>
+    </div>
+
+    <br>
+
+    <hr style="border: 5px double blueviolet">
+
+    <br>
+    <h2 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-align: center; font-size: xx-large;"></h2>
+    <br>
+
+    <hr style="border: 5px double blueviolet">
+
+    <br><br><br><br>
+
+    <a href="index.html" class="enlace1" >Volver</a>
+    </section>
+
+</body>
+</html>

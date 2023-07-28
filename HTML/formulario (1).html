@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+    <title>Formularios</title>
+    <style>
+    .enlace1{
+        text-decoration: none;
+        padding: 10px;
+        border: 1px solid #4B4B4B;
+        margin:13px;
+        color: #4B4B4B;
+    }
+    body {
+            margin: 20px;
+    }
+        form {
+            display: block;
+            margin-top: 5%;
+    }
+        input {
+            padding: 5px 15px;
+    }
+    </style>
+        <link rel="icon" href="media/IMG/favicon.webp" type="image/png">
+
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <!-- Atributos de la etiqueta form:
+        1. action -> indica que hacer o donde se va a dirigir cuando se envíe -> otra página html-una aplicación php o java, ....
+        2. method -> como se va a enviar ese formulario al action. Existen 2 metodos: POST o el GET
+        3. id, name son para identificar el formulario
+        4. enctype para indicar que tipo de archivos se envia desde el formulario. Ej: enctype="multipart/form-data"
+    -->
+    <form action="index.html" method="get" enctype="multipart/form-data">
+        <!-- Entrada de datos
+            1. Etiqueta <input> : text, number, tel, email, file, range, submit
+            2. label -> etiqueta para indicar el nombre del input que se muestra
+            3. placeholder -> atributo del input muestra un texto de ayuda
+            4. maxlength -> indica la longitud máxima que podra escribir el usuario
+            5. minlength -> indica la longitud mínima que debera escribir el usuario
+            6. required -> indica que es obligatorio escribir ese campo para poder enviar el formulario
+            7. pattern -> patrón de entrada de datos. Ejemplo -> nombre: [a-zA-ZáéíóúÁÉÍÓÚñÑ ]
+            8. value -> indica el valor inicial del input
+            9. Atributo importante -> autocomplete: permite que el navegador autocomplete los datos
+        -->
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" maxlength="20" minlength="3"
+            pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ ]+" required autocomplete="on">
+        <label for="apellidos">Apellidos: </label>
+        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos completos"
+            pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ ]+" maxlength="35" minlength="5" aria-expanded="true" required
+            autocomplete="on">
+        <br>
+        <br>
+        <!-- En el pattern (patron) lo que esta dentro del corchete [] es lo que puede recibir y lo que esta dentro de la llave {} es la cantidad de dígitos
+             que puede recibir de lo que esta en el corchete 963685756 695842653 ... pero no 468597568 -->
+        <!-- En programación de lenguajes se llaman EXPRESIONES REGULARES -->
+        <label for="telefono">Telefono: </label>
+        <input type="tel" name="telefono" id="telefono" placeholder="Indica tu teléfono" pattern="[6-9]{1}[0-9]{8}"
+            minlength="9" maxlength="9" required autocomplete="on">
+        <label for="sueldo">Sueldo: </label>
+        <input type="number" name="sueldo" id="sueldo" min="1080" max="2000" placeholder="Sueldo...">
+        <input type="range" min="100" max="10000" id="sueldo2" name="sueldo2">
+        <br>
+        <br>
+        <input type="email" name="email" id="email" placeholder="Escribe tu correo">
+        <br><br>
+        <label for="archivo">Inster CV: </label>
+        <input type="file" name="archivo" id="archivo" accept=".pdf,.docx,.doc">
+        <br><br><br>
+
+        <!-- AGRUPACIÓN DE DaTOS -->
+        <fieldset>
+            <legend>Datos Académicos</legend>
+            <input type="text" placeholder="Titulación" id="titulacion" name="titulacion">
+            <br><br>
+            <label for="fechaTitulacion">Fecha Titulación: </label>
+            <!-- ETIQUETA 'DATE' MMUESTRA UN CALENDARIO PARA INSERTAR FECHA -->
+            <input type="date" id="fechaTitulacion" name="fechaTitulacion">
+            <input type="text" placeholder="Institución" name="institucion" id="institucion">
+            <!-- PRÁCTICA NO RECOMENDADA -->
+            <p>Nivel de conocimiento</p>
+            <!-- 'DISABLE' DESACTIVA EL CAMPO Y EL VISITANTE NO LO PODRÁ ACTIVAR -->
+            <input type="text" disabled>
+            <!-- EL ATRIBUTO 'READONLY' INDICA QUE EL CAMPO ES SOLO DE LECTURA -->
+            <input type="text" value="17:09 h" readonly>
+            <!-- ETIQUETA 'HIDDEN' OCULTA LA ETIQUETA -->
+            <input type="text" value="50000" hidden>
+             <!-- CREAR MENSAJES, COMENTARIOS, O TEXTOS EXTERNOS, CON 'TEXTAREA'-->
+            <label for="mensaje">MensaJe</label>
+            <textarea name="mensaje" id="mensaje" cols="50" rows="3 " ></textarea>
+            <!-- ELEMENTOS DE GRUPO RADIOBOTTOM -->
+            <!-- SI SE PONE DISTINTO NAME SE PUEDE MARCAR MAÁS DE UNO, CON MISMO NAME NO SE PUEDE PONER MÁS DE UNO-->
+            <label>selecciona el nivel de ingés</label><br>
+            <p> <input type="radio" name="niveldeingles" value="basico" checked>Básico</p>
+            <p></p><input type="radio" name="niveldeingles" value="intermedio">Intermedio</p>
+            <p><input type="radio" name="niveldeingles" value="avanzado">avanzado</p>
+            <!-- CHECKED PARA QUE ESRTE MARCADO AUTOMATICAMENTE  -->
+        </fieldset>
+
+        <fieldset>
+
+            <legend>DATOS DE INICIO DE SESIÓN</legend>
+            <label for="username">Nombre de usuario</label>
+            <input type="text" name="username" id="username">
+            <!-- TIPO DE INPUT TYPE PASSWORD PARA OCULTAR LAS CONTRASEÑAS-->
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" max="10" min="8">
+            <label for="password">Repite la contraseña</label>
+            <input type="password" id="password" name="password" max="10" min="8">
+            <br>
+            <br>
+            <br>
+            <label for="horario">Horario de conexión</label>
+            <!-- ETIQUETA QUE PERMITE CREAR UNA LISTA DESPLEGABLE CON MÚLTIPLES OBCIONES, VA UNIDA POR UNA ETIQUEDA POR OPCION <OPTION> 
+            ATRIBUTOS:
+            VALUE: VALOR QUE SE ENVIA CON EL FORMULARIO, NO ES OBLIGATORIO.
+            SELECTED: QUE ESTA PRESELECCIONADO    
+            -->
+            <select name="horario" id="horario">
+
+                <option value="morning">mañana</option>
+                <option value="mediodia">mediodia</option>
+                <option value="tarde">tarde</option>
+                <option value="noche">noche</option>
+
+            </select> 
+
+            <!-- CUANDO SE NECESITA QUE PUEDA SELECCIONAR VARIAS OPCIONES, SE DEBE INDICAR AL SELECT EL ATRIBUTO MULTIPLE-> SU PRESENCIA INDICA QUE EL USUARIO PUEDE SELECCIONAR VARIOS VALORES-->
+            <label for="dispositivo">Dispositivo de conexión</label>
+            <select name="dispositivo" id="dispositivo" multiple>
+
+                <option value="movil">SmartPhone</option>
+                <option value="tablet">Tablet</option>
+                <option value="pc">Ordenador</option>
+                <option value="tv">Smart TV</option>
+
+            </select>
+            <br>
+            <br>
+            <br>
+
+            
+        <!-- las casillas de selección multiple -> en las interfaces de las apicaciones y en los formularios, las casillas de selección se utilizan para tener una selección múltiple: de nuevo, es necesario utilizar el elemento <input> con type="checkbox" -->
+
+        <p>Jornada Seleccionada</p>
+        <label for="morning">Mañana</label>
+        <input type="checkbox" id="morning" name="morning" value="morning">
+        <label for="tarde">Tarde</label>
+        <input type="checkbox" id="tarde" name="tarde" value="tarde">
+        <label for="indiferente">Indiferente</label>
+        <input type="checkbox" id="indiferente" name="indiferente" value="indiferente">
+        <label for="teletrabajo">Teletrabajo</label>
+        <input type="checkbox" id="teletrabajo" name="teletrabajo" value="teletrabajo">
+
+        <br>
+        <br>
+        <br>
+
+            <!-- para seleccionar colores podemos utilizar un input type color-->
+            <label>Color Preferido</label>
+            <input type="color" name="colorPreferido" id="colorPreferido">
+        
+            <br>
+            <br>
+            <br>
+
+            <!-- input para entradas de url -->
+            <label for="tuweb">Página Web</label>
+            <br>
+            <input type="tuweb" name="tuweb"  id="tuweb">
+            <br>
+            <br>
+            <label for="mes">Selecciona mes</label>
+            <br>
+            <input type="month" id="mes" name="mes">
+            <br>
+            
+            <!-- ETIQUETAS DE MES, SEMANAS, HORAS, DIA-MES-AÑO -->
+            <p>Etiquetas de tiempo</p>
+            <label for="hora">Hora de comida</label>
+            <input type="time" id="hora" name="hora">
+            <br>
+            <br>
+            <label for="fechayhora">Fecha y hora</label>
+            <input type="datetime-local" id="fechayhora" name="fechayhora">
+            <br>
+            <br>
+            <label for="semana">Semana</label>
+            <input type="week" id="semana" name="semana">
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar Formulario">
+            <input type="reset" value="Limpiar Formulario">
+        </p>
+ 
+        
+    </form>
+    <br><br><br><br>
+
+    <a href="index.html" class="enlace1" >Volver</a>
+</body>
+
+</html>

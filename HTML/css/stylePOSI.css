@@ -1,0 +1,36 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background: #f4f4f4 url(../media/IMG/chelo.webp) no-repeat fixed center;
+}
+
+header h1{
+    padding-top: 100px;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.izquierda{
+    width: 200px;
+    background-color: #9b9b9b;
+    padding: 10px;
+    float: left;
+    margin: 25px;
+}
+
+.derecha{
+    width: 200px;
+    background-color: #9b9b9b;
+    padding: 10px;
+    margin: 25px;
+    float: right;
+}
+.norm{
+    width: 80%;
+    background-color: #9b9b9b;
+    padding: 10px;
+    margin: auto;
+    clear: both;
+}

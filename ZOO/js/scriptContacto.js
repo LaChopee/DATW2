@@ -34,5 +34,25 @@ window.addEventListener("load", function(){
         let apellidos=document.querySelector("#lname").value;
         let mns=document.querySelector("#mensaje").value;
         console.log(nombre+" "+apellidos+" "+mns);
+        validarNombre(nombre)
     })
 })
+
+let mnsError=document.querySelector("#mnsError")
+function validarNombre(nombre){
+    if (nombre==null||nombre==""||nombre==" "){
+        
+    }
+}
+
+function validarApellido(){
+    
+}
+
+function validarContacto(){
+    
+}
+
+function validarMensaje(){
+    
+}

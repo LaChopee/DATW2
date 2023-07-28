@@ -15,6 +15,7 @@ input[type=text], select, textarea {
 }
 
 #formcontacto option{
+    background-color: #cea456a1;
     color: black;
 }
   /* Add a background color and some padding around the form */

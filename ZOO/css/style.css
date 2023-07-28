@@ -1,9 +1,11 @@
-
 *{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
+}
+.aaa{
+    margin-bottom: px;
 }
 
 .logo img{
@@ -52,7 +54,7 @@
     background-color: #CEA556;
     margin: 0 0 1% 0;
     justify-content: center;
-    
+    text-align: right;
 }
 
 .imagen img{
@@ -66,6 +68,9 @@
     left: 30%;
     transform: translate(-50%, -50%);
     width: 43%;
+    background-color: #ffffff5e;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .imagen{
@@ -86,6 +91,70 @@
     padding: 5%;
     border-radius: 5px;
     text-align: left;
+}
+
+/* Style the tab */
+.entradas{
+    background-color: #cea456;
+    padding: 35px;
+    margin: auto;
+    border-radius: 5px;
+    color: #fff;
+    width: 40%;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #fff;
+    background-color: #cea456ce;
+    border-radius: 5px;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    border-radius: 5px;
+    float: left;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #399e149c;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #389E14;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 5px;
+  }
+
+
+.formEntradas{
+    margin: 7px 0 0 0;
+}
+
+.formEntradas input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
 }
 
 
@@ -123,51 +192,39 @@
   cursor: not-allowed;
 }
 
-/* Style the tab */
-.entradas{
-    background-color: #cea45681;
-    padding: 35px;
-    margin: 10px 0;
-    border-radius: 5px;
-}
-
-.tab {
-    overflow: hidden;
-    border: 1px solid #CEA556;
-    background-color: #cea456ce;
-    border-radius: 5px;
-  }
-  
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
-    background-color: inherit;
-    border-radius: 5px;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
+.button-3 {
     background-color: #389E14;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 200ms;
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 10px 0;
   }
   
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #CEA556;
+  .button-3:not(:disabled):hover,
+  .button-3:not(:disabled):focus {
+    outline: 0;
+    background: #389E14;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
   }
   
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    border-radius: 5px;
+  .button-3:disabled {
+    filter: saturate(0.2) opacity(0.5);
+    -webkit-filter: saturate(0.2) opacity(0.5);
+    cursor: not-allowed;
   }
+
 
 /* For mobile phones: */
 

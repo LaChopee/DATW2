@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,67 +15,85 @@
 </head>
 <body>
     
-    <header class="headerSup">
-        <ul>
+    <header>
+        <ul class="headerSup">
             <li><span class="material-symbols-outlined">mail</span><span class="text-po">ingo@zoodawn.es</span></li>
             <li><span class="material-symbols-outlined">call</span>+34 999 999 999</li>
             <li><span class="material-symbols-outlined">home_pin</span>Calle Campo 84. Tomelloso. Ciudad Real. España</li>
         </ul>
-    </header>
-    <div class="container">
-        <header class="header">
-            <div class="logo col-4">
-                <img src="img/favicon.webp" alt="zoo">
-            </div>
-            <div class="menu col-8">
-                <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Conócenos</a></li>
-                    <li><a href="">contacto</a></li>
-                </ul>
-            </div>
-        </header>
-        <div class="col-12 imagen">
-            <img src="img/jimmi-el-mono.webp" alt="mono" >
-            <div class="centrado col-4">
-                <h3>Ven y disfruta de un día con la naturaleza en compañia.</h3>
-                <p class="txtBaner">
-                    Te presentamos a nuestros animales, representantes de especies que habitan en nuestro entorno cercano y en ecosistemas más lejanos, muchas amenazadas de extinción en la naturaleza.
+        <div class="container">
+            <!-- MENU -->
+            <header class="header">
+                <div class="logo col-4">
+                    <img src="img/favicon.webp" alt="zoo">
+                </div>
+                <div class="menu col-8">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="conoce.html">Conócenos</a></li>
+                        <li><a href="contacto.html">contacto</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="col-12 imagen">
+                <!-- FOTOS DE FONDO -->
+                <img src="" alt="mono" id="fotosBaner">
+                <!-- TEXTO DE PRESENTACION -->
+                <div class="centrado col-5">
+                    <h3>Ven y disfruta de un día con la naturaleza en compañia.</h3>
+                    <p class="txtBaner">
+                        Te presentamos a nuestros animales, representantes de especies que habitan en nuestro entorno cercano y en ecosistemas más lejanos, muchas amenazadas de extinción en la naturaleza.
                     <br><br>
-                    Conoce también la rica flora de nuestro parque, árboles, arbustos, plantas y flores que dan vida y frescura a nuestros caminos e instalaciones.
+                        Conoce también la rica flora de nuestro parque, árboles, arbustos, plantas y flores que dan vida y frescura a nuestros caminos e instalaciones.
                     <br><br>
-                    Cerca de 2.000 animales de más de 300 especies y 1.300 plantas de cerca de 320 especies botánicas.
-                </p>
+                        Cerca de 2.000 animales de más de 300 especies y 1.300 plantas de cerca de 320 especies botánicas.
+                    </p>
+                </div>
+                <!-- COMPRA DE ENTRADAS -->
                 <div class="entradas">
+                    <!-- BOTONES DE CAMBIO -->
                     <div class="tab">
                         <button class="tablinks" onclick="openCity(event, 'general')">Entrada general</button>
                         <button class="tablinks" onclick="openCity(event, 'parques')">Bono parques</button>
                         <button class="tablinks" onclick="openCity(event, 'hotel')">Entrada + Hotel</button>
                     </div>
-                  
-                    <!-- Tab content -->
+                    <!-- CONTENIDIO DE LOS BOTONES ANTERIORRES -->
                     <div id="general" class="tabcontent">
                         <h3>Entrada general</h3>
-                        <p>€</p>
+                        <p class="formEntradas">
+                            <label for="visi">Visitantes</label>
+                            <input type="number" id="" placeholder="Añadir visitantes">
+                        </p>
+                        <p class="formEntradas">
+                            <label for="fech">Fecha de visita</label>
+                            <input type="date" id="" placeholder="Seleccionar fecha">
+                        </p>
                         <button class="button-3" role="button">Comprar Entradas</button>
                     </div>
-                  
+              
                     <div id="parques" class="tabcontent">
                         <h3>Bono Parques</h3>
-                        <p>€</p>
+                        <p>139.00€</p>
+                        <p class="formEntradas">
+                            <label for="visi">Cantidad</label>
+                            <input type="number" id="" placeholder="Añadir cantidad">
+                        </p>
                         <button class="button-3" role="button">Comprar Bono</button>
                     </div>
-                  
+              
                     <div id="hotel" class="tabcontent">
                         <h3>Entrada + Hotel</h3>
                         <p>€</p>
-                        <button class="button-3" role="button">Comprar</button>
+                        <p class="formEntradas">
+                            <label for="visi">Visitantes</label>
+                            <input type="number" id="" placeholder="Añadir visitantes">
+                        </p>
+                        <button class="button-3" role="button">Reservar</button>
                     </div>
                 </div>
-            </div>
-            
+            </div>               
         </div>
-    </div>
+    </header>
 
 </body>
 </html>

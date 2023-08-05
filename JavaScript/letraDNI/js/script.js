@@ -1,4 +1,15 @@
 //dni
+window.addEventListener("load",()=>{
+    Swal.fire({
+        title: 'Calcula la letra de tu DNI',
+        width: 600,
+        padding: '3em',
+        color: '#221706',
+        backdrop: `
+          rgba(117, 108, 89,0.4)
+        `
+      })
+})
 
 function calcularLdni(){
     let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];

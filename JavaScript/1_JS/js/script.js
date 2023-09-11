@@ -1,3 +1,14 @@
+window.addEventListener("load",()=>{
+    Swal.fire({
+        title: '1_JS',
+        width: 600,
+        padding: '3em',
+        color: '#221706',
+        backdrop: `
+          rgba(117, 108, 89,0.4)
+        `
+      })
+})
 /*
 Este script enseña
     1.comentarios
@@ -90,7 +101,7 @@ function sumar2(){
 let x=parseInt(document.getElementById("numero1").value);
 let y= parseInt(document.getElementById("numero2").value);
 
-document.getElementById("suma2").innerHTML="el valor de x es "+x+" y el valor de y es "+y+" y la suma de estos dos valores es "+(x+y);
+document.getElementById("suma2").innerHTML=x+y;
 }
 
 //existe otra manera de declarar las variables <2015

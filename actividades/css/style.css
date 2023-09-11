@@ -51,3 +51,62 @@
   .imgen{
     height: 30px;
   }
+
+  .tablas{
+    margin: 50px auto;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .tabla1{
+    float: left;
+    margin-right: 12.5%;
+    margin-left: 12.5%;
+  }
+
+  .tabla2{
+    float: left;
+    margin-left: 12.5%;
+  }
+
+  .button2 {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+  box-shadow: 6px 6px 12px #c5c5c5,
+              -6px -6px 12px #ffffff;
+ }
+ 
+ .button2:active {
+  color: #666;
+  border-color: #362616;
+  box-shadow: inset 4px 4px 12px #c5c5c5,
+              inset -4px -4px 12px #ffffff;
+ }
+
+ .tabla-1{
+  margin: 25px auto;
+  border: 2px solid #362616;
+  border-radius: 5px;
+  border-collapse: collapse;
+}
+
+.tabla-2{
+  margin: 25px auto;
+  border: 2px solid #362616;
+  border-radius: 5px;
+  border-collapse: collapse;
+}
+
+.tabla-1 th, td{
+  padding: 12.5px;
+  border: 1px solid #362616;
+}
+
+.tabla-2 th, td{
+  padding: 12.5px;
+}

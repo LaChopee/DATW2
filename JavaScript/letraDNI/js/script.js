@@ -25,6 +25,7 @@ function calcularLdni(){
     console.log(calletra);
     let letra=letras[calletra];
     console.log(letra);
+    mnsError.style.display="none";
     document.getElementById("resultado").innerHTML= numero+"-"+letra
 }
 }
